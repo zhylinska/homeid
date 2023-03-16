@@ -140,7 +140,7 @@
   color: #ffffff;
 }
 * body #main-content #showcase .showcase-container .btn:hover {
-  animation: vis 0.1s;
+  animation: vis 0.2s;
 }
 @keyframes vis {
   0% {
