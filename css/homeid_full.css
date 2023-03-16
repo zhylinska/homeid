@@ -112,14 +112,17 @@
 }
 * body #main-content #sidebar ul {
   list-style: none;
-  color: #ffffff;
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
 * body #main-content #sidebar ul li {
   padding: 1rem 0;
 }
-* body #main-content #sidebar ul li:hover {
+* body #main-content #sidebar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+* body #main-content #sidebar ul li:hover a {
   color: #fa582a;
 }
 * body #main-content #showcase {
