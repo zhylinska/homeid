@@ -1,1 +1,103 @@
- 
+ $dark-background: #251e1e;
+ $bright-background: #fa582a;
+ $light-text: #ffffff;
+ $grey-text: #5a5a5a;
+* {
+  margin: 0;
+  padding: 0;
+
+  body {
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    background: $dark-background;
+    .container {
+      margin: 0 5rem;
+    }
+    #navigation {
+      .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: solid 1px $grey-text;
+        .logo {
+          background: $bright-background;
+          margin-bottom: -3rem;
+          padding: 3rem;
+          width: max-content;
+          text-align: center;
+          color: $light-text;
+          h3 {
+            text-transform: uppercase;
+            padding-top: 0.5rem;
+            font-weight: normal;
+          }
+        }
+        .nav {
+
+          ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            padding-top: 3rem;
+            li {
+              width: max-content;
+              color: $light-text;
+              padding: 0.5rem;
+              p {
+                padding: 0.5rem;
+                white-space: nowrap;
+              }
+              .form {
+                display: none;
+              }
+            }
+            li:last-of-type {
+              display: flex;
+              flex-direction: row;
+              img {
+                padding-left: 0.5rem;
+              }
+            }
+            li:hover {
+              border: solid 1px $grey-text;
+            }
+            li:first-of-type:hover {
+              position: relative;
+               .form {
+                 display: flex;
+                 flex-direction: column;
+                 position: absolute;
+                 top: 63px;
+                 border: 1px solid $grey-text;
+                 padding: 2rem;
+                 margin-left: -0.5rem;
+                  input {
+                    padding: 1rem;
+                    border-radius: 10px;
+                    border: transparent;
+                    margin-bottom: 1rem;
+                  }
+                 button {
+                   padding: 1rem;
+                   border-radius: 10px;
+                   border: transparent;
+                 }
+                 button:hover {
+                   color: $bright-background;
+                 }
+               }
+            }
+          }
+        }
+      }
+    }
+    #main-content {
+     margin-top: 47px;
+     background: url("../img/homeid-showcase.png") no-repeat;
+     background-position: top right;
+     height: 250vh;
+    }
+  }
+}

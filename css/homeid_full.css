@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  background: #251e1e;
+}
+* body .container {
+  margin: 0 5rem;
+}
+* body #navigation .nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid 1px #5a5a5a;
+}
+* body #navigation .nav-container .logo {
+  background: #fa582a;
+  margin-bottom: -3rem;
+  padding: 3rem;
+  width: max-content;
+  text-align: center;
+  color: #ffffff;
+}
+* body #navigation .nav-container .logo h3 {
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+  font-weight: normal;
+}
+* body #navigation .nav-container .nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-top: 3rem;
+}
+* body #navigation .nav-container .nav ul li {
+  width: max-content;
+  color: #ffffff;
+  padding: 0.5rem;
+}
+* body #navigation .nav-container .nav ul li p {
+  padding: 0.5rem;
+  white-space: nowrap;
+}
+* body #navigation .nav-container .nav ul li .form {
+  display: none;
+}
+* body #navigation .nav-container .nav ul li:last-of-type {
+  display: flex;
+  flex-direction: row;
+}
+* body #navigation .nav-container .nav ul li:last-of-type img {
+  padding-left: 0.5rem;
+}
+* body #navigation .nav-container .nav ul li:hover {
+  border: solid 1px #5a5a5a;
+}
+* body #navigation .nav-container .nav ul li:first-of-type:hover {
+  position: relative;
+}
+* body #navigation .nav-container .nav ul li:first-of-type:hover .form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 63px;
+  border: 1px solid #5a5a5a;
+  padding: 2rem;
+  margin-left: -0.5rem;
+}
+* body #navigation .nav-container .nav ul li:first-of-type:hover .form input {
+  padding: 1rem;
+  border-radius: 10px;
+  border: transparent;
+  margin-bottom: 1rem;
+}
+* body #navigation .nav-container .nav ul li:first-of-type:hover .form button {
+  padding: 1rem;
+  border-radius: 10px;
+  border: transparent;
+}
+* body #navigation .nav-container .nav ul li:first-of-type:hover .form button:hover {
+  color: #fa582a;
+}
+* body #main-content {
+  margin-top: 47px;
+  background: url("../img/homeid-showcase.png") no-repeat;
+  background-position: top right;
+  height: 250vh;
+}
+
+/*# sourceMappingURL=homeid_full.css.map */
