@@ -1,5 +1,6 @@
  $dark-background: #251e1e;
  $bright-background: #fa582a;
+ $light-background: #ffffff;
  $light-text: #ffffff;
  $grey-text: #5a5a5a;
 * {
@@ -73,6 +74,7 @@
                  border: 1px solid $grey-text;
                  padding: 2rem;
                  margin-left: -0.5rem;
+                 z-index: 999;
                   input {
                     padding: 1rem;
                     border-radius: 10px;
@@ -95,9 +97,128 @@
     }
     #main-content {
      margin-top: 47px;
-     background: url("../img/homeid-showcase.png") no-repeat;
-     background-position: top right;
-     height: 250vh;
+      position: relative;
+
+      .img {
+        display: flex;
+        height: 80vh;
+        justify-content: right;
+        margin-right: 0;
+        animation: ani 1s forwards;
+        @keyframes ani {
+          0% {
+            margin-right: -30rem;
+          }
+          100% {
+            margin-right: 0;
+          }
+        }
+      }
+      #sidebar {
+        position: absolute;
+        left: 5rem;
+        top: 5rem;
+        ul {
+          list-style: none;
+          color: $light-text;
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+          li {
+            padding: 1rem 0;
+          }
+          li:hover {
+            color: $bright-background;
+          }
+        }
+      }
+      #showcase {
+        position: absolute;
+        left: 5rem;
+        top: 27rem;
+        .showcase-container {
+          max-width: 600px;
+          .btn {
+            background: $bright-background;
+            width: max-content;
+            padding: 1rem 0.5rem;
+            color: $light-text;
+          }
+          h1 {
+            font-size: 3rem;
+            line-height: 4rem;
+            color: $light-text;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+          }
+          p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            color: $light-text
+          }
+          .progect-imgs {
+            width: 100%;
+            img {
+              padding: 2rem 2rem 2rem 0;
+              width: 40%;
+            }
+          }
+        }
+      }
+      #about-us {
+        background: $light-background;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        .about-us-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          .about-us-text {
+            position: relative;
+             padding: 2rem 2rem 2rem 0;
+            .category {
+              text-transform: uppercase;
+              position: absolute;
+              top: 0;
+              left: 0;
+              display: flex;
+              writing-mode: vertical-rl;
+              justify-content: center;
+              align-items: stretch;
+              text-align: justify;
+              min-height: 100%;
+              padding: 2rem;
+              font-size: 2.5rem;
+              color: $grey-text;
+              letter-spacing: 20px;
+
+            }
+            .info {
+              margin-left: 7rem;
+              margin-right: 3rem;
+              h2 {
+                padding: 2rem 0;
+              }
+              p {
+                line-height: 1.5rem;
+                padding-bottom: 2rem;
+              }
+              .btn {
+                background: $dark-background;
+                color: $light-text;
+                text-transform: uppercase;
+                width: max-content;
+                padding: 1rem 0.5rem;
+              }
+            }
+          }
+          .about-us-img {
+            width: 100%;
+            display: flex;
+             img {
+               margin: 0 auto;
+             }
+          }
+        }
+      }
     }
   }
 }

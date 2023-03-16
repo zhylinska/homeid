@@ -70,6 +70,7 @@
   border: 1px solid #5a5a5a;
   padding: 2rem;
   margin-left: -0.5rem;
+  z-index: 999;
 }
 * body #navigation .nav-container .nav ul li:first-of-type:hover .form input {
   padding: 1rem;
@@ -87,9 +88,126 @@
 }
 * body #main-content {
   margin-top: 47px;
-  background: url("../img/homeid-showcase.png") no-repeat;
-  background-position: top right;
-  height: 250vh;
+  position: relative;
+}
+* body #main-content .img {
+  display: flex;
+  height: 80vh;
+  justify-content: right;
+  margin-right: 0;
+  animation: ani 1s forwards;
+}
+@keyframes ani {
+  0% {
+    margin-right: -30rem;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+* body #main-content #sidebar {
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+}
+* body #main-content #sidebar ul {
+  list-style: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+* body #main-content #sidebar ul li {
+  padding: 1rem 0;
+}
+* body #main-content #sidebar ul li:hover {
+  color: #fa582a;
+}
+* body #main-content #showcase {
+  position: absolute;
+  left: 5rem;
+  top: 27rem;
+}
+* body #main-content #showcase .showcase-container {
+  max-width: 600px;
+}
+* body #main-content #showcase .showcase-container .btn {
+  background: #fa582a;
+  width: max-content;
+  padding: 1rem 0.5rem;
+  color: #ffffff;
+}
+* body #main-content #showcase .showcase-container h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #ffffff;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+* body #main-content #showcase .showcase-container p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+* body #main-content #showcase .showcase-container .progect-imgs {
+  width: 100%;
+}
+* body #main-content #showcase .showcase-container .progect-imgs img {
+  padding: 2rem 2rem 2rem 0;
+  width: 40%;
+}
+* body #main-content #about-us {
+  background: #ffffff;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+* body #main-content #about-us .about-us-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+* body #main-content #about-us .about-us-container .about-us-text {
+  position: relative;
+  padding: 2rem 2rem 2rem 0;
+}
+* body #main-content #about-us .about-us-container .about-us-text .category {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  writing-mode: vertical-rl;
+  justify-content: center;
+  align-items: stretch;
+  text-align: justify;
+  min-height: 100%;
+  padding: 2rem;
+  font-size: 2.5rem;
+  color: #5a5a5a;
+  letter-spacing: 20px;
+}
+* body #main-content #about-us .about-us-container .about-us-text .info {
+  margin-left: 7rem;
+  margin-right: 3rem;
+}
+* body #main-content #about-us .about-us-container .about-us-text .info h2 {
+  padding: 2rem 0;
+}
+* body #main-content #about-us .about-us-container .about-us-text .info p {
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+}
+* body #main-content #about-us .about-us-container .about-us-text .info .btn {
+  background: #251e1e;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: max-content;
+  padding: 1rem 0.5rem;
+}
+* body #main-content #about-us .about-us-container .about-us-img {
+  width: 100%;
+  display: flex;
+}
+* body #main-content #about-us .about-us-container .about-us-img img {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=homeid_full.css.map */
