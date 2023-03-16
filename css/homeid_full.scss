@@ -101,7 +101,7 @@
 
       .img {
         display: flex;
-        height: 80vh;
+        height: 90vh;
         justify-content: right;
         margin-right: 0;
         animation: ani 1s forwards;
@@ -134,14 +134,25 @@
       #showcase {
         position: absolute;
         left: 5rem;
-        top: 27rem;
+        top: 35rem;
         .showcase-container {
           max-width: 600px;
           .btn {
             background: $bright-background;
             width: max-content;
-            padding: 1rem 0.5rem;
+            padding: 0.5rem;
             color: $light-text;
+          }
+          .btn:hover {
+            animation: vis 0.1s;
+            @keyframes vis {
+              0% {
+                opacity: 1;
+              }
+              100% {
+             opacity: 0;
+              }
+            }
           }
           h1 {
             font-size: 3rem;
@@ -206,7 +217,18 @@
                 color: $light-text;
                 text-transform: uppercase;
                 width: max-content;
-                padding: 1rem 0.5rem;
+                padding: 0.5rem;
+              }
+                .btn:hover {
+                  animation: vis 0.1s;
+                  @keyframes vis {
+                    0% {
+                      opacity: 1;
+                    }
+                    100% {
+                      opacity: 0;
+                    }
+                }
               }
             }
           }
@@ -216,6 +238,78 @@
              img {
                margin: 0 auto;
              }
+          }
+        }
+      }
+      #exclusive {
+        background: $light-background;
+        padding: 5rem 0;
+        h3 {
+          text-align: center;
+          color: $bright-background;
+          font-weight: normal;
+        }
+        h1 {
+          line-height: 2.5rem;
+          text-align: center;
+          font-size: 2rem;
+          padding: 2rem 0 3rem 0;
+        }
+        .blocks {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          .block {
+            position: relative;
+            img {
+              width: 100.2%;
+              height: 100.2%;
+
+            }
+            .btn {
+              position: absolute;
+              top: 0;
+              right: 0;
+              padding: 0.5rem;
+              margin: 1rem;
+              background: $light-background;
+            }
+
+            .block-text {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              padding: 1rem;
+              margin: 1rem;
+              color: $light-text;
+              max-width: 50%;
+              h3 {
+                padding-bottom: 1rem;
+                color: $light-text;
+                text-align: left;
+              }
+
+            }
+          }
+        }
+        .btn {
+          background: $dark-background;
+          padding: 0.5rem;
+          width: max-content;
+          margin: 3rem auto;
+          p {
+            color: $light-text;
+            text-transform: uppercase;
+          }
+        }
+        .btn:hover {
+          animation: vis 0.1s;
+          @keyframes vis {
+            0% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
           }
         }
       }
