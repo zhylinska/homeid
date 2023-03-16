@@ -147,7 +147,10 @@
             background: $bright-background;
             width: max-content;
             padding: 0.5rem;
-            color: $light-text;
+            a {
+              text-decoration: none;
+              color: $light-text;
+            }
           }
           .btn:hover {
             animation: vis 0.2s;
