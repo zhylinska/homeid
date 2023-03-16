@@ -302,7 +302,7 @@
           }
         }
         .btn:hover {
-          animation: vis 0.1s;
+          animation: vis 0.2s;
           @keyframes vis {
             0% {
               opacity: 1;
@@ -314,7 +314,9 @@
         }
       }
       #our-projects {
+        background: $light-background;
         .our-projects-container {
+          background: $dark-background;
           display: flex;
           flex-direction: row;
           .explane {
@@ -322,14 +324,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding-right: 3rem;
+            padding: 3rem;
 
             p {
               color: $light-text;
             }
           }
           .project-blocks {
-            padding: 5rem 0;
+            padding: 5rem;
             width: 75%;
 
 
@@ -360,6 +362,121 @@
           }
         }
       }
+      #signing {
+        background: $light-background;
+        .signing-container {
+          color: $light-text;
+          display: flex;
+          background: url("../signing.png") no-repeat center center/cover;
+          height: 100vh;
+          flex-direction: column;
+          text-align: center;
+          h2 {
+            padding-top: 15rem;
+            font-size: 32px;
+            line-height: 38px;
+            padding-bottom: 5rem;
+          }
+          .btn {
+            border:  solid 1px $grey-text;
+            text-transform: uppercase;
+            padding: 0.5rem;
+            width: max-content;
+            margin: 3rem auto;
+            a {
+              text-decoration: none;
+              color: $light-text;
+            }
+
+        }
+          .btn:hover {
+            animation: vis 0.2s;
+            a {
+              color: $bright-background;
+            }
+            @keyframes vis {
+              0% {
+                opacity: 1;
+              }
+              100% {
+                opacity: 0;
+              }
+            }
+          }
+      }
     }
   }
+    #contacts {
+      background: $light-background;
+      .contacts-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5rem 0;
+        .adress {
+          h2 {
+            padding-bottom: 3rem;
+          }
+          p {
+            padding-bottom: 1rem;
+          }
+        }
+        .privecy {
+          ul {
+            list-style: none;
+            li {
+              padding-bottom: 1rem;
+              a {
+                text-decoration: none;
+                color: $dark-background;
+              }
+            }
+          }
+        }
+        .social {
+          text-align: right;
+          h4 {
+            padding-bottom: 3rem;
+          }
+          a {
+            color: $dark-background;
+            padding-left: 1rem;
+          }
+          a:hover {
+            color: $bright-background;
+          }
+        }
+
+      }
+    }
+    #footer {
+      background: $light-background;
+      .footer-container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+        position: relative;
+      .logo {
+        background: $bright-background;
+        width: max-content;
+        padding: 2.5rem;
+        text-align: center;
+        color: $light-text;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+      }
+      .back-btn {
+        text-align: center;
+        padding-right: 15rem;
+        width: 100%;
+        padding-bottom: 4rem;
+        i {
+          color: $dark-background;
+        }
+      }
+      }
+    }
+}
 }

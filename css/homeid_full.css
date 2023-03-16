@@ -290,7 +290,7 @@
   text-transform: uppercase;
 }
 * body #main-content #exclusive .btn:hover {
-  animation: vis 0.1s;
+  animation: vis 0.2s;
 }
 @keyframes vis {
   0% {
@@ -300,7 +300,11 @@
     opacity: 0;
   }
 }
+* body #main-content #our-projects {
+  background: #ffffff;
+}
 * body #main-content #our-projects .our-projects-container {
+  background: #251e1e;
   display: flex;
   flex-direction: row;
 }
@@ -309,13 +313,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 3rem;
+  padding: 3rem;
 }
 * body #main-content #our-projects .our-projects-container .explane p {
   color: #ffffff;
 }
 * body #main-content #our-projects .our-projects-container .project-blocks {
-  padding: 5rem 0;
+  padding: 5rem;
   width: 75%;
 }
 * body #main-content #our-projects .our-projects-container .project-blocks .block {
@@ -338,6 +342,114 @@
 }
 * body #main-content #our-projects .our-projects-container .project-blocks .block .project-text h3 {
   padding-bottom: 1rem;
+}
+* body #main-content #signing {
+  background: #ffffff;
+}
+* body #main-content #signing .signing-container {
+  color: #ffffff;
+  display: flex;
+  background: url("../signing.png") no-repeat center center/cover;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+* body #main-content #signing .signing-container h2 {
+  padding-top: 15rem;
+  font-size: 32px;
+  line-height: 38px;
+  padding-bottom: 5rem;
+}
+* body #main-content #signing .signing-container .btn {
+  border: solid 1px #5a5a5a;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  width: max-content;
+  margin: 3rem auto;
+}
+* body #main-content #signing .signing-container .btn a {
+  text-decoration: none;
+  color: #ffffff;
+}
+* body #main-content #signing .signing-container .btn:hover {
+  animation: vis 0.2s;
+}
+* body #main-content #signing .signing-container .btn:hover a {
+  color: #fa582a;
+}
+@keyframes vis {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+* body #contacts {
+  background: #ffffff;
+}
+* body #contacts .contacts-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+* body #contacts .contacts-container .adress h2 {
+  padding-bottom: 3rem;
+}
+* body #contacts .contacts-container .adress p {
+  padding-bottom: 1rem;
+}
+* body #contacts .contacts-container .privecy ul {
+  list-style: none;
+}
+* body #contacts .contacts-container .privecy ul li {
+  padding-bottom: 1rem;
+}
+* body #contacts .contacts-container .privecy ul li a {
+  text-decoration: none;
+  color: #251e1e;
+}
+* body #contacts .contacts-container .social {
+  text-align: right;
+}
+* body #contacts .contacts-container .social h4 {
+  padding-bottom: 3rem;
+}
+* body #contacts .contacts-container .social a {
+  color: #251e1e;
+  padding-left: 1rem;
+}
+* body #contacts .contacts-container .social a:hover {
+  color: #fa582a;
+}
+* body #footer {
+  background: #ffffff;
+}
+* body #footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+}
+* body #footer .footer-container .logo {
+  background: #fa582a;
+  width: max-content;
+  padding: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+* body #footer .footer-container .back-btn {
+  text-align: center;
+  padding-right: 15rem;
+  width: 100%;
+  padding-bottom: 4rem;
+}
+* body #footer .footer-container .back-btn i {
+  color: #251e1e;
 }
 
 /*# sourceMappingURL=homeid_full.css.map */
