@@ -7,10 +7,14 @@
   font-family: "roboto", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  background: #251e1e;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 * body .container {
   margin: 0 5rem;
+}
+* body #navigation {
+  background: #251e1e;
 }
 * body #navigation .nav-container {
   display: flex;
@@ -25,6 +29,7 @@
   width: max-content;
   text-align: center;
   color: #ffffff;
+  z-index: 99;
 }
 * body #navigation .nav-container .logo h3 {
   text-transform: uppercase;
@@ -86,15 +91,17 @@
 * body #navigation .nav-container .nav ul li:first-of-type:hover .form button:hover {
   color: #fa582a;
 }
-* body #main-content {
-  margin-top: 47px;
+* body #showcase {
+  padding-top: 47px;
   position: relative;
+  background: #251e1e;
 }
-* body #main-content .img {
+* body #showcase .img {
   display: flex;
-  height: 90vh;
+  height: 70vh;
   justify-content: right;
   margin-right: 0;
+  padding-bottom: 47px;
   animation: ani 1s forwards;
 }
 @keyframes ani {
@@ -105,44 +112,48 @@
     margin-right: 0;
   }
 }
-* body #main-content #sidebar {
+* body #showcase .img img {
+  max-width: 1040px;
+}
+* body #showcase #sidebar {
   position: absolute;
   left: 5rem;
-  top: 5rem;
+  top: 3rem;
 }
-* body #main-content #sidebar ul {
+* body #showcase #sidebar ul {
   list-style: none;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
 }
-* body #main-content #sidebar ul li {
+* body #showcase #sidebar ul li {
   padding: 1rem 0;
 }
-* body #main-content #sidebar ul li a {
+* body #showcase #sidebar ul li a {
   text-decoration: none;
   color: #ffffff;
 }
-* body #main-content #sidebar ul li:hover a {
+* body #showcase #sidebar ul li:hover a {
   color: #fa582a;
 }
-* body #main-content #showcase {
+* body #showcase #showcase-screen {
   position: absolute;
   left: 5rem;
-  top: 35rem;
+  top: 25rem;
 }
-* body #main-content #showcase .showcase-container {
+* body #showcase #showcase-screen .showcase-screen-container {
   max-width: 600px;
+  margin-bottom: 2rem;
 }
-* body #main-content #showcase .showcase-container .btn {
+* body #showcase #showcase-screen .showcase-screen-container .btn {
   background: #fa582a;
   width: max-content;
   padding: 0.5rem;
 }
-* body #main-content #showcase .showcase-container .btn a {
+* body #showcase #showcase-screen .showcase-screen-container .btn a {
   text-decoration: none;
   color: #ffffff;
 }
-* body #main-content #showcase .showcase-container .btn:hover {
+* body #showcase #showcase-screen .showcase-screen-container .btn:hover {
   animation: vis 0.2s;
 }
 @keyframes vis {
@@ -153,29 +164,29 @@
     opacity: 0;
   }
 }
-* body #main-content #showcase .showcase-container h1 {
+* body #showcase #showcase-screen .showcase-screen-container h1 {
   font-size: 3rem;
   line-height: 4rem;
   color: #ffffff;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   padding-top: 2rem;
 }
-* body #main-content #showcase .showcase-container p {
-  font-size: 1.2rem;
-  line-height: 2rem;
+* body #showcase #showcase-screen .showcase-screen-container p {
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #ffffff;
 }
-* body #main-content #showcase .showcase-container .progect-imgs {
+* body #showcase #showcase-screen .showcase-screen-container .progect-imgs {
   width: 100%;
 }
-* body #main-content #showcase .showcase-container .progect-imgs img {
+* body #showcase #showcase-screen .showcase-screen-container .progect-imgs img {
   padding: 2rem 2rem 2rem 0;
   width: 40%;
 }
 * body #main-content #about-us {
   background: #ffffff;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 * body #main-content #about-us .about-us-container {
   display: grid;
@@ -206,7 +217,7 @@
   margin-right: 3rem;
 }
 * body #main-content #about-us .about-us-container .about-us-text .info h2 {
-  padding: 2rem 0;
+  padding-bottom: 2rem;
 }
 * body #main-content #about-us .about-us-container .about-us-text .info p {
   line-height: 1.5rem;
@@ -230,12 +241,9 @@
     opacity: 0;
   }
 }
-* body #main-content #about-us .about-us-container .about-us-img {
-  width: 100%;
-  display: flex;
-}
 * body #main-content #about-us .about-us-container .about-us-img img {
-  margin: 0 auto;
+  width: 100%;
+  margin: auto;
 }
 * body #main-content #exclusive {
   background: #ffffff;
@@ -284,6 +292,7 @@
   padding-bottom: 1rem;
   color: #ffffff;
   text-align: left;
+  font-weight: bold;
 }
 * body #main-content #exclusive .btn {
   background: #251e1e;
@@ -335,9 +344,12 @@
   margin-bottom: 2rem;
   width: 100%;
 }
+* body #main-content #our-projects .our-projects-container .project-blocks .block .project-img {
+  display: flex;
+}
 * body #main-content #our-projects .our-projects-container .project-blocks .block .project-img img {
-  width: 100%;
-  height: 100.2%;
+  margin: auto;
+  height: 100%;
 }
 * body #main-content #our-projects .our-projects-container .project-blocks .block .project-text {
   padding: 5rem 3rem;
