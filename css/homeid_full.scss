@@ -103,17 +103,17 @@
       padding-top: 47px;
       position: relative;
       background: $dark-background;
-
+      overflow: hidden;
       .img {
         display: flex;
         height: 808px;
         justify-content: right;
         margin-right: 0;
         padding-bottom: 47px;
-        animation: ani 1s forwards;
+        animation: ani 2s forwards;
         @keyframes ani {
           0% {
-            margin-right: -30rem;
+            margin-right: -100rem;
           }
           100% {
             margin-right: 0;
@@ -136,7 +136,7 @@
           line-height: 1.2rem;
 
           li {
-            padding: 1rem 0;
+            padding: 0.7rem 0;
 
             a {
               text-decoration: none;
@@ -156,7 +156,7 @@
       #showcase-screen {
         position: absolute;
         left: 5rem;
-        top: 25rem;
+        top: 23rem;
 
         .showcase-screen-container {
           max-width: 600px;
@@ -166,6 +166,17 @@
             background: $bright-background;
             width: max-content;
             padding: 0.5rem;
+            opacity: 0;
+            animation-delay: 5s;
+            animation: btnshow 3s forwards;
+            @keyframes btnshow {
+              0%, 60% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
 
             a {
               text-decoration: none;
@@ -191,21 +202,57 @@
             color: $light-text;
             padding-bottom: 1rem;
             padding-top: 2rem;
+            animation-delay: 2s;
+            animation: h1show 4s forwards;
+            @keyframes h1show {
+              0%, 60% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
           }
 
           p {
             font-size: 1rem;
             line-height: 1.5rem;
-            color: $light-text
+            color: $light-text;
+            padding-bottom: 2rem;
+            opacity: 0;
+            animation-delay: 3s;
+            animation: pshow 4s forwards;
+            @keyframes pshow {
+              0%, 80% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
           }
 
           .project-imgs {
             width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 0;
+            animation-delay: 4s;
+            animation-duration: 4s;
+            animation: projectimgshow 5s forwards;
+            @keyframes projectimgshow {
+              0%, 80% {
+                margin-left: -100rem;
+              }
+              100% {
+                margin-left: 0;
+              }
+            }
 
             img {
-              padding: 2rem 2rem 2rem 0;
-              width: 417px;
-              height: 269px;
+              width: 193px;
+              height: 136px;
+              margin-right: 2rem;
             }
           }
         }
