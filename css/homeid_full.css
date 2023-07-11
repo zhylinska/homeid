@@ -422,7 +422,7 @@
 * body #main-content #signing .signing-container {
   color: #ffffff;
   display: flex;
-  background: url("../signing.png") no-repeat center center/cover;
+  background: url("../img/signing.png") no-repeat center center/cover;
   height: 756px;
   flex-direction: column;
   text-align: center;
